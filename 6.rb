@@ -9,8 +9,8 @@ module Test
 end
 
 module Attendance
-  def self.student_quantity
-    puts @@quantity
+  def student_quantity
+    puts Student.quantity
   end
 end
 
@@ -23,6 +23,9 @@ class Student
     @nota1 = nota1
     @nota2 = nota2
     @@quantity +=1
+  end
+  def self.quantity
+    @@quantity
   end
 end
 
